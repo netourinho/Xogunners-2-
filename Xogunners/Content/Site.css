@@ -1,12 +1,10 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿.navbar-estilo {
+    background-color: #1F4C74;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+body {
+    padding-top: 50px;
+    padding-bottom: 0%;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -22,3 +20,51 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.header-site {
+    background-image: url(../Content/Imagens/img-home.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-top: 30%;
+    padding-bottom: -32%;
+}
+
+.content-site {
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+hr{
+    border-color:#1F4C74;
+}
+
+.legendas{
+    color: #333333;
+    font-family:'Glacial Indifference';
+    font-size:20px;
+}
+
+.texto-descricao{
+    color:#333333;
+    font-family:'Glacial Indifference';
+    font-size:20px;
+}
+
+.img-site {
+    background-image: url(../Content/Imagens/mud.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+footer {
+    padding: 3% 5% 3% 5%;
+    background-color: #1F4C74;
+    color:#d6Dee5;
+}
+

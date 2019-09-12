@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Meu Aplicativo ASP.NET</title>
@@ -9,7 +9,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-dark navbar-inverse navbar-fixed-top navbar-estilo ">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -17,22 +17,43 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Nome do aplicativo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a class="navbar-brand" href="#">
+                    <img class="img-responsive" src="~/Content/Imagens/teste-brand.png">
+                </a>
+                @*@Html.ActionLink("Xogum Fretes", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Início", "Index", "Home")</li>
+            <div class="navbar-collapse collapse navbar-dark">
+                <ul class="nav navbar-nav navbar-right">
                     <li>@Html.ActionLink("Sobre", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contato", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Entrar", "Login", "Home")</li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="body-content">
         @RenderBody()
-        <hr />
+
         <footer>
-            <p>&copy; @DateTime.Now.Year - Meu Aplicativo ASP.NET</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>&copy; @DateTime.Now.Year - Xogum Fretes Corporation</p>
+                    <p>Av. Prof. João Rodrigues Alckmin, 1501</p>
+                    <p>Jd. Esperança, Guaratinguetá – SP</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <strong><p>Contatos</p></strong>
+                    <p>suporte@xogumfretes.com.br</p>
+                    <p>55 (12) 3131-3232</p>
+                </div>
+                <div class="col-md-4 text-right">
+                    <strong><p>Siga nossas redes<p></strong>
+                    <div class="row">
+                        <a href="https://www.instagram.com/?hl=pt-br"><img src="~/Content/Imagens/instagram.png" /></a>
+                        <a href="https://www.facebook.com/"><img src="~/Content/Imagens/facebook.png" /></a>
+                        <a href="https://www.youtube.com/"><img src="~/Content/Imagens/youtube.png" /></a>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 

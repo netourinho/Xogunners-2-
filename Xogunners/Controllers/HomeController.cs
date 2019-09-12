@@ -20,9 +20,9 @@ namespace Xogunners.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Login()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Página de Login.";
 
             return View();
         }
