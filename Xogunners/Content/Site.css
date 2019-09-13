@@ -21,6 +21,8 @@ textarea {
     max-width: 280px;
 }
 
+/*TELA HOME*/
+
 .header-site {
     background-image: url(../Content/Imagens/img-home.png);
     background-position: center top;
@@ -29,6 +31,7 @@ textarea {
     color: #ffffff;
     padding-top: 30%;
     padding-bottom: -32%;
+    
 }
 
 .content-site {
@@ -58,13 +61,30 @@ hr{
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #ffffff;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 3.7%;
 }
 
 footer {
     padding: 3% 5% 3% 5%;
     background-color: #1F4C74;
     color:#d6Dee5;
+}
+
+/*TELA DE LOGIN*/
+
+.formulario-login {
+    color: #424251;
+    font-family: 'Glacial Indifference';
+    padding: -2% 5% 4% 3%;
+    border-width: 10px;
+    border-color: black;
+    /*background-color:#333333;*/
+}
+
+.texto-descricao-2 {
+    color: #333333;
+    font-family: 'Glacial Indifference';
+    font-size: 15px;
 }
 

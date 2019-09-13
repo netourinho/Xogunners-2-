@@ -26,5 +26,12 @@ namespace Xogunners.Controllers
 
             return View();
         }
+
+        public ActionResult RecuperarSenha()
+        {
+            ViewBag.Message = "Pagina de Recuperação de Senha";
+            return View();
+        }
+        
     }
 }

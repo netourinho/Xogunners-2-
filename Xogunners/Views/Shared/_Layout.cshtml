@@ -9,7 +9,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-dark navbar-inverse navbar-fixed-top navbar-estilo ">
+    <div class="navbar navbar-dark navbar-inverse navbar-fixed-top navbar-estilo">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="@Url.Action("Index","Home")">
                     <img class="img-responsive" src="~/Content/Imagens/teste-brand.png">
                 </a>
                 @*@Html.ActionLink("Xogum Fretes", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
@@ -35,7 +35,7 @@
 
         <footer>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4  text-center">
                     <p>&copy; @DateTime.Now.Year - Xogum Fretes Corporation</p>
                     <p>Av. Prof. João Rodrigues Alckmin, 1501</p>
                     <p>Jd. Esperança, Guaratinguetá – SP</p>
@@ -45,7 +45,7 @@
                     <p>suporte@xogumfretes.com.br</p>
                     <p>55 (12) 3131-3232</p>
                 </div>
-                <div class="col-md-4 text-right">
+                <div class="col-md-4  text-center">
                     <strong><p>Siga nossas redes<p></strong>
                     <div class="row">
                         <a href="https://www.instagram.com/?hl=pt-br"><img src="~/Content/Imagens/instagram.png" /></a>
