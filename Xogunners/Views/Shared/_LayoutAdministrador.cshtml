@@ -17,17 +17,27 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="@Url.Action("Index","Home")">
+                <a class="navbar-brand" href="@Url.Action("Home","Administrador")">
                     <img class="img-responsive" src="~/Content/Imagens/teste-brand.png">
                 </a>
                 @*@Html.ActionLink("Xogum Fretes", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
             <div class="navbar-collapse collapse navbar-dark">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>@Html.ActionLink("Sobre", "About", "Home")</li>
-                    <li>@Html.ActionLink("Entrar", "Login", "Home")</li>
-                </ul>
+                <div class="navbar-collapse collapse navbar-dark">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>@Html.ActionLink("Análise de Perfis", "Configuracao", "Administrador")</li>
+                        <li>@Html.ActionLink("Suporte ao Usuário", "Configuracao", "Administrador")</li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>@Html.ActionLink("Notificações", "Configuracao", "Administrador")</li>
+                        <li>@Html.ActionLink("Configurações", "Configuracao", "Administrador")</li>
+                        <li>@Html.ActionLink("Sair", "Index", "Home")</li>
+                    </ul>
+                </div>
+
+                
             </div>
+
         </div>
     </div>
     <div class="body-content">
